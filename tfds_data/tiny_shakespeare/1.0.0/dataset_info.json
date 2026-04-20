@@ -1,0 +1,38 @@
+{
+  "description": "Texto completo de lope3all.txt partido en train/validation/test.",
+  "fileFormat": "tfrecord",
+  "location": {
+    "urls": [
+      "file://lope3all.txt (local)"
+    ]
+  },
+  "moduleName": "tiny_shakespeare_dataset_builder",
+  "name": "tiny_shakespeare",
+  "splits": [
+    {
+      "filepathTemplate": "{DATASET}-{SPLIT}.{FILEFORMAT}-{SHARD_X_OF_Y}",
+      "name": "train",
+      "numBytes": "615985",
+      "shardLengths": [
+        "1"
+      ]
+    },
+    {
+      "filepathTemplate": "{DATASET}-{SPLIT}.{FILEFORMAT}-{SHARD_X_OF_Y}",
+      "name": "validation",
+      "numBytes": "34088",
+      "shardLengths": [
+        "1"
+      ]
+    },
+    {
+      "filepathTemplate": "{DATASET}-{SPLIT}.{FILEFORMAT}-{SHARD_X_OF_Y}",
+      "name": "test",
+      "numBytes": "34068",
+      "shardLengths": [
+        "1"
+      ]
+    }
+  ],
+  "version": "1.0.0"
+}
